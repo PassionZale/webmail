@@ -6,15 +6,15 @@
                 <div class="mdui-list-item-content mdui-text-truncate">{{ mail }}</div>
             </li>
             <li class="mdui-divider"></li>
-            <li class="mdui-list-item mdui-ripple">
+            <li class="mdui-list-item mdui-ripple" v-link="{name: 'inbox-list'}">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
                 <div class="mdui-list-item-content">收件箱</div>
             </li>
-            <li class="mdui-list-item mdui-ripple">
+            <li class="mdui-list-item mdui-ripple" v-link="{name: 'sent-list'}">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
                 <div class="mdui-list-item-content">已发邮件</div>
             </li>
-            <li class="mdui-list-item mdui-ripple">
+            <li class="mdui-list-item mdui-ripple" v-link="{name: 'draft-list'}">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe151;</i>
                 <div class="mdui-list-item-content">草稿</div>
             </li>
