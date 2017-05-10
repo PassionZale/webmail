@@ -1,11 +1,19 @@
-# aaa
+# webmail
 
 > A Vue.js project
+
+## Before Setup
+``` bash
+# Make sure you had installed bower and gulp global
+npm i -g bower
+npm i -g gulp
+```
 
 ## Build Setup
 
 ``` bash
 # install dependencies
+bower install
 npm install
 
 # serve with hot reload at localhost:8080

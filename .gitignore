@@ -2,6 +2,7 @@
 .DS_Store
 node_modules/
 dist/
+src/assets/bower/
 npm-debug.log
 selenium-debug.log
 test/unit/coverage
