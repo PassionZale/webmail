@@ -1,0 +1,22 @@
+{
+  "name": "webmail",
+  "description": "A Vue.js project",
+  "main": "",
+  "authors": [
+    "whouu <whouu@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/PassionZale/webmail",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "mdui": "^0.2.0"
+  }
+}
