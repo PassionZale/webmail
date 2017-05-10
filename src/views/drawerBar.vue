@@ -34,7 +34,11 @@
         </ul>
     </div>
 </template>
-
+<style>
+    #left-drawer {
+        margin-top: 56px;
+    }
+</style>
 <script>
 import defaultAvatar from '../assets/images/default_avatar.png'
 export default {
@@ -42,6 +46,7 @@ export default {
         return {
             avatar: defaultAvatar,
             mail: 'whouu@qq.com',
+            unReadMsg: 13,
             dark_mode: false
         }
     },
