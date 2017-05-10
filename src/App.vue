@@ -1,25 +1,29 @@
 <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
-  </div>
+    <c-head-bar></c-head-bar>
+    <c-drawer-bar></c-drawer-bar>
+    <div id="app">
+
+    </div>
+    <c-back-top></c-back-top>
+    <c-new-mail></c-new-mail>
 </template>
 
 <script>
+import cHeadBar from './views/headBar.vue'
+import cBackTop from './views/backTop.vue'
+import cNewMail from './views/newMail.vue'
+import cDrawerBar from './views/drawerBar.vue'
 export default {
-  data () {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello Vue!'
+    data () {
+        return {
+
+        }
+    },
+    components: {
+        cHeadBar,
+        cDrawerBar,
+        cBackTop,
+        cNewMail,
     }
-  }
 }
 </script>
-
-<style>
-body {
-  font-family: Helvetica, sans-serif;
-}
-</style>
