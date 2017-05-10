@@ -10,7 +10,7 @@
 
 <style>
     #app {
-        margin-top: 64px;
+        margin-top: 56px;
     }
 </style>
 

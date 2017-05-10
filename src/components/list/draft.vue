@@ -1,4 +1,5 @@
 <template>
+    <c-place-holder :visible.sync="visible"></c-place-holder>
     <ul class="mdui-list">
         <li class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
@@ -44,7 +45,18 @@
 </template>
 
 <script>
+    import cPlaceHolder from '../common/placeHolder.vue'
     export default {
-
+        data() {
+            return {
+                visible: true
+            }
+        },
+        components: { cPlaceHolder },
+        created(){
+            setTimeout(()=>{
+                this.visible = false;
+            }, 1000);
+        }
     }
 </script>
