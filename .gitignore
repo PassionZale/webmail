@@ -1,0 +1,25 @@
+# Application
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+
+# IDE Config Files
+/nbproject
+/.idea
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+## Vim cache files
+*.swp
+*.swo
+*.swn
+
