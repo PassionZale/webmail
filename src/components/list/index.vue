@@ -23,6 +23,9 @@ export default {
         cToolBar,
         cDrawerBar,
         cNewMail,
+    },
+    watch: {
+
     }
 }
 </script>
