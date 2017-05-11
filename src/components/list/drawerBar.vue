@@ -1,4 +1,5 @@
 <template>
+    <!--抽屉式导航-->
     <div class="mdui-drawer mdui-drawer-close" id="left-drawer">
         <ul class="mdui-list">
             <li class="mdui-list-item mdui-ripple">
@@ -40,7 +41,7 @@
     }
 </style>
 <script>
-import defaultAvatar from '../assets/images/default_avatar.png'
+import defaultAvatar from '../../assets/images/default_avatar.png'
 export default {
     data() {
         return {

@@ -1,5 +1,6 @@
 <template>
-    <c-head-bar></c-head-bar>
+    <!--根路由，默认进入收件箱列表-->
+    <c-tool-bar></c-tool-bar>
     <c-drawer-bar></c-drawer-bar>
     <div id="app">
         <router-view></router-view>
@@ -14,12 +15,12 @@
 </style>
 
 <script>
-import cHeadBar from '../views/headBar.vue'
-import cDrawerBar from '../views/drawerBar.vue'
-import cNewMail from '../components/common/newMail.vue'
+import cToolBar from '../../components/list/toolBar.vue'
+import cDrawerBar from '../../components/list/drawerBar.vue'
+import cNewMail from '../../components/common/newMail.vue'
 export default {
     components: {
-        cHeadBar,
+        cToolBar,
         cDrawerBar,
         cNewMail,
     }

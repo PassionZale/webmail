@@ -1,4 +1,5 @@
 <template>
+    <!--已发送邮件列表-->
     <c-place-holder :visible.sync="visible"></c-place-holder>
     <ul class="mdui-list" v-show="!visible">
         <li class="mdui-list-item mdui-ripple" v-for="i in 15">

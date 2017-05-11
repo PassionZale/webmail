@@ -1,7 +1,7 @@
 export default (router) => router.map({
     '/': {
         name: 'index',
-        component: require('./components/index.vue'),
+        component: require('./components/list/index.vue'),
         subRoutes: {
             '/': {
                 name: 'inbox-list',
@@ -20,7 +20,7 @@ export default (router) => router.map({
     },
     'search': {
         name: 'search',
-        component: require('./components/search/index.vue'),
+        component: require('./components/search/search.vue'),
     },
 });
 
