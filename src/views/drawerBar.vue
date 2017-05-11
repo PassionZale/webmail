@@ -6,15 +6,15 @@
                 <div class="mdui-list-item-content mdui-text-truncate">{{ mail }}</div>
             </li>
             <li class="mdui-divider"></li>
-            <li class="mdui-list-item mdui-ripple" v-link="{name: 'inbox-list'}">
+            <li class="mdui-list-item mdui-ripple" @click.prevent="redirect_router('inbox-list')">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
                 <div class="mdui-list-item-content">收件箱</div>
             </li>
-            <li class="mdui-list-item mdui-ripple" v-link="{name: 'sent-list'}">
+            <li class="mdui-list-item mdui-ripple" @click.prevent="redirect_router('sent-list')">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
                 <div class="mdui-list-item-content">已发邮件</div>
             </li>
-            <li class="mdui-list-item mdui-ripple" v-link="{name: 'draft-list'}">
+            <li class="mdui-list-item mdui-ripple" @click.prevent="redirect_router('draft-list')">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe151;</i>
                 <div class="mdui-list-item-content">草稿</div>
             </li>
@@ -60,6 +60,14 @@ export default {
             }else{
                 $('body').removeClass('mdui-theme-layout-dark');
             }
+        },
+        redirect_router(router_name) {
+            let inst = new mdui.Drawer('#left-drawer');
+            let drawerState = inst.getState();
+            if(drawerState === 'opened'){
+                inst.toggle();
+            }
+            this.$route.router.go({name: router_name});
         }
     }
 }

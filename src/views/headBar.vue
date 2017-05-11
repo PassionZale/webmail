@@ -4,11 +4,21 @@
             <a id="drawer-toggle-btn" mdui-drawer="{target: '#left-drawer'}" href="javascript:" class="mdui-btn mdui-btn-icon">
                 <i class="mdui-icon material-icons">&#xe5d2;</i>
             </a>
-            <span class="mdui-typo-title">Title</span>
+            <span class="mdui-typo-title">{{ title }}</span>
             <div class="mdui-toolbar-spacer"></div>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8b6;</i></a>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d5;</i></a>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+            <a v-link="{name: 'search'}" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">&#xe8b6;</i>
+            </a>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                title: '收件箱'
+            }
+        }
+    }
+</script>

@@ -10,13 +10,9 @@ const router = new VueRouter({
 });
 // 定义路由规则
 routerMap(router);
-router.redirect({
-    '*': '/'
-});
 
 router.beforeEach((transition) => {
     document.body.scrollTop = 0;
-    $('#drawer-toggle-btn').get(0).click();
     transition.next();
 });
 
