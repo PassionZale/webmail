@@ -103,7 +103,6 @@
                 }
             },
             changeTitle(router_name) {
-                console.log(router_name);
                 let vm = this;
                 switch (router_name){
                     case 'inbox-list':
