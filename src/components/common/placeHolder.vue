@@ -1,35 +1,11 @@
 <template>
-    <div class="container" v-show="visible">
-        <div class="firstLine line"></div>
-        <div class="secondLine line"></div>
-
-        <div class="firstLine line"></div>
-        <div class="secondLine line"></div>
-
-        <div class="firstLine line"></div>
-        <div class="secondLine line"></div>
-
-        <div class="firstLine line"></div>
-        <div class="secondLine line"></div>
-
-        <div class="firstLine line"></div>
-        <div class="secondLine line"></div>
-    </div>
+    <ul class="mdui-list animated" v-show="visible">
+        <li class="mdui-list-item mdui-ripple" v-for="i in 5">
+            <div class="mdui-list-item-avatar mdui-color-grey-100"></div>
+            <div class="mdui-list-item-content mdui-color-grey-100"></div>
+        </li>
+    </ul>
 </template>
-
-<style>
-    .firstLine {
-        width: 100%;
-    }
-    .secondLine {
-        width: 40%;
-    }
-    .line {
-        margin-bottom: 10px;
-        height: 20px;
-        background-color: #f4f5f5;
-    }
-</style>
 
 <script>
     export default {

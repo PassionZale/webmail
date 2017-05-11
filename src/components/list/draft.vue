@@ -1,44 +1,8 @@
 <template>
     <c-place-holder :visible.sync="visible"></c-place-holder>
-    <ul class="mdui-list">
-        <li class="mdui-list-item mdui-ripple">
+    <ul class="mdui-list" v-show="!visible">
+        <li class="mdui-list-item mdui-ripple" v-for="i in 10">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
-            <div class="mdui-list-item-content">草稿箱</div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe838;</i>
             <div class="mdui-list-item-content">草稿箱</div>
         </li>
     </ul>
