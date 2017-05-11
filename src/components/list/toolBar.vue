@@ -15,9 +15,10 @@
 
 <script>
     export default {
-        data() {
-            return {
-                title: '收件箱'
+        props: {
+            title: {
+                type: String,
+                default: '收件箱'
             }
         }
     }
