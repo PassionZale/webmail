@@ -14,7 +14,7 @@
 </style>
 
 <script>
-import cToolBar from '../../components/list/toolBar.vue'
+import cToolBar from '../../components/mail_list/toolBar.vue'
 import cNewMail from '../../components/common/newMail.vue'
 export default {
     components: {

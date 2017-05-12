@@ -24,6 +24,7 @@
             <li class="mdui-list-item mdui-ripple router-item" data-router-name="inbox-list">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>
                 <div class="mdui-list-item-content">收件箱</div>
+                <i class="mdui-list-item-icon mdui-valign mdui-text-color-theme">{{ unReadMsg }}</i>
             </li>
             <li class="mdui-list-item mdui-ripple router-item" data-router-name="sent-list">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
@@ -63,7 +64,7 @@
             return {
                 avatar: defaultAvatar,
                 mail: 'whouu@qq.com',
-                unReadMsg: 13,
+                unReadMsg: '99+',
                 dark_mode: false
             }
         },

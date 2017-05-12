@@ -1,19 +1,19 @@
 export default (router) => router.map({
     '/': {
         name: 'index',
-        component: require('./components/list/index.vue'),
+        component: require('./components/mail_list/index.vue'),
         subRoutes: {
             '/': {
                 name: 'inbox-list',
-                component: require('./components/list/inbox.vue'),
+                component: require('./components/mail_list/inbox.vue'),
             },
             '/sent-list': {
                 name: 'sent-list',
-                component: require('./components/list/sent.vue'),
+                component: require('./components/mail_list/sent.vue'),
             },
             '/draft-list': {
                 name: 'draft-list',
-                component: require('./components/list/draft.vue'),
+                component: require('./components/mail_list/draft.vue'),
             },
         },
 
@@ -22,5 +22,9 @@ export default (router) => router.map({
         name: 'search',
         component: require('./components/search/search.vue'),
     },
+    'detail': {
+        name: 'detail',
+        component: require('./components/mail_detail/detail.vue')
+    }
 });
 
