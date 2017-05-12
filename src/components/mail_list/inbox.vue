@@ -15,7 +15,7 @@
                 </div>
                 <div class="mdui-list-item-text mdui-list-item-two-line">You've got to get enough sleep. Other travelling salesmen live a life of luxury. You've got to get enough sleep. Other travelling salesmen live a life of luxury.</div>
             </div>
-            <i v-if="i < 3" class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">&#xe3a6;</i>
+            <i v-if="i < 3" class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">&#xe159;</i>
         </li>
     </ul>
 </template>

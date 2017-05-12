@@ -5,9 +5,30 @@
             <a @click.prevent="goBack" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5c4;</i></a>
             <span class="mdui-typo-title">邮件详情</span>
             <div class="mdui-toolbar-spacer"></div>
-            <a href="javascript:">
-                快速回复
-            </a>
+            <i class="mdui-icon ion-grid" mdui-menu="{target: '#extra-menus-list'}"></i>
+            <ul class="mdui-menu" id="extra-menus-list">
+                <li class="mdui-menu-item">
+                    <a href="javascript:" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe80d;</i>分享设置
+                    </a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe872;</i>删除邮件
+                    </a>
+                </li>
+                <li class="mdui-divider"></li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe159;</i>标记未读
+                    </a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe14b;</i>举报邮件
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -140,10 +161,18 @@
                 <i class="mdui-icon mdui-fab-opened material-icons">&#xe5cd;</i>
             </button>
             <div class="mdui-fab-dial">
-                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink"><i class="mdui-icon material-icons">&#xe864;</i></button>
-                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"><i class="mdui-icon material-icons">&#xe866;</i></button>
-                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"><i class="mdui-icon material-icons">&#xe191;</i></button>
-                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"><i class="mdui-icon material-icons">&#xe913;</i></button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange">
+                    <i class="mdui-icon ion-forward"></i>
+                </button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red">
+                    <i class="mdui-icon ion-reply-all"></i>
+                </button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink">
+                    <i class="mdui-icon ion-reply"></i>
+                </button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue">
+                    <i class="mdui-icon ion-chatbox"></i>
+                </button>
             </div>
         </div>
     </div>
