@@ -140,16 +140,6 @@
                         <p>只有有耐心圆满完成简单工作的人，才能够轻而易举的完成困难的事。</p>
                     </li>
                 </ul>
-                <h4>You may want to create a perfect <code>&lt;hr /&gt;</code> line, despite the fact that there will never have one
-                </h4>
-                <hr/>
-                <p><abbr title="法国作家罗切福考尔德">La Racheforcauld</abbr> said:
-                    <mark>"Few things are impossible in themselves; and it is often for want of will, rather than of means, that man fails
-                        to succeed".
-                    </mark>
-                    You just need to follow the browser's behavior, and set a right <code>margin</code> to it。it will works nice as the
-                    demo you're watching now. The following code is the best way to render typo in Chinese:
-                </p>
             </div>
         </div>
 

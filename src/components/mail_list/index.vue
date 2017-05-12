@@ -4,22 +4,21 @@
     <div id="app">
         <router-view></router-view>
     </div>
+    <c-back-top></c-back-top>
     <c-new-mail></c-new-mail>
 </template>
 
-<style>
-    #app {
-        margin-top: 56px;
-    }
-</style>
+
 
 <script>
 import cToolBar from '../../components/mail_list/toolBar.vue'
 import cNewMail from '../../components/common/newMail.vue'
+import cBackTop from '../../components/common/backTop.vue'
 export default {
     components: {
         cToolBar,
         cNewMail,
+        cBackTop
     }
 }
 </script>
