@@ -10,8 +10,8 @@
 <style>
     #back-top-btn {
         position: fixed!important;
-        right: 16px;
-        bottom: 88px;
+        left: 16px;
+        bottom: 16px;
     }
 </style>
 
