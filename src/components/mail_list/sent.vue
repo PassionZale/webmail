@@ -31,7 +31,10 @@
         components: { cPlaceHolder },
         created(){
             setTimeout(()=>{
-                this.visible = false;
+                //this.visible = false;
+                mdui.snackbar({
+                    message: '发件箱空空如也~'
+                });
             }, 1000);
         }
     }

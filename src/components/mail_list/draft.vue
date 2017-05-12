@@ -21,7 +21,10 @@
         components: { cPlaceHolder },
         created(){
             setTimeout(()=>{
-                this.visible = false;
+                //this.visible = false;
+                mdui.snackbar({
+                    message: '草稿箱空空如也~'
+                });
             }, 1000);
         }
     }

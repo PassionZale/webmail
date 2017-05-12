@@ -2,7 +2,7 @@
     <!--收件箱邮件列表-->
     <c-place-holder :visible.sync="visible"></c-place-holder>
     <ul class="mdui-list" v-show="!visible">
-        <li class="mdui-list-item mdui-ripple" v-for="i in 20">
+        <li class="mdui-list-item mdui-ripple" v-for="i in 20" v-link="{name: 'detail'}">
             <div class="mdui-list-item-avatar">B</div>
             <div class="mdui-list-item-content">
                 <div class="mdui-list-item-text mdui-list-item-one-line mdui-text-color-theme-text">
