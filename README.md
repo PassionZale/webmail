@@ -13,7 +13,7 @@ npm i -g gulp
 
 ``` bash
 # install dependencies
-bower install
+bower install --allow-root
 npm install
 
 # serve with hot reload at localhost:8080

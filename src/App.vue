@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style>
-    #app {
+    body {
         margin-top: 56px;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <!--工具栏导航-->
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
-        <div class="mdui-toolbar mdui-color-theme-accent">
+    <header class="mdui-appbar mdui-appbar-fixed">
+        <div id="tool-navigation" class="mdui-toolbar mdui-color-theme">
             <a id="drawer-toggle-btn" href="javascript:" class="mdui-btn mdui-btn-icon">
                 <i class="mdui-icon material-icons">&#xe5d2;</i>
             </a>
@@ -11,7 +11,8 @@
                 <i class="mdui-icon material-icons">&#xe8b6;</i>
             </a>
         </div>
-    </div>
+    </header>
+
 
     <!--抽屉式导航-->
     <div class="mdui-drawer mdui-drawer-close" id="left-drawer">

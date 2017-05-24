@@ -51,12 +51,12 @@
             </div>
             <div class="mdui-panel-item" id="panel-from">
                 <div class="mdui-panel-item-header">
-                    <div class="mdui-panel-item-title">发件人(20)</div>
+                    <div class="mdui-panel-item-title">发件人(13)</div>
                     <div class="mdui-panel-item-summary">05-10 19:20</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
                 </div>
                 <div class="mdui-panel-item-body">
-                    <p v-for="i in 20">{{ i + '@tomonline-inc.com'}}</p>
+                    <p v-for="i in 13">{{ i + '@tomonline-inc.com'}}</p>
                     <div class="mdui-panel-item-actions">
                         <button id="close-from" class="mdui-btn mdui-ripple">收起</button>
                     </div>
